@@ -1,5 +1,8 @@
 \documentclass[10pt,journal,compsoc]{IEEEtran}
 
+\usepackage{cite}
+\usepackage[pdftex]{graphicx}
+
 \begin{document}
 
 \title{The past and future of visualization for computing in science and engineering}
@@ -11,7 +14,7 @@
 	\IEEEcompsocitemizethanks{
 	\IEEEcompsocthanksitem Joao Comba is at Universidade Federal do Rio Grande do Sul, Brazil\protect\\ 
 	\IEEEcompsocthanksitem Daniel Weiskopf is at University of Stuttgart, Germany.
-}
+}}
 
 
 \IEEEtitleabstractindextext{%
@@ -49,13 +52,13 @@ We will provide examples of previous papers that illustrate the breadth of visua
 Multidimensional and multivariate data is almost omnipresent in computational science and engineering. Accordingly, we had several papers addressing this topic.
 The paper by Helmut Doleisch and Helwig Hauser~\cite{Doleisch2012} nicely shows how the combination of 2D and 3D visualization, flexible degree-of-interest definition, and interactive exploration leads to an effective visual analysis of complex simulation data. They discuss, for example, how multiple simulation attributes from computational fluid dynamics can be visually analyzed. Figure~\ref{fig:simvis} shows a screenshot from their software system, illustrating how different visualization views are integrated in order to support a user-oriented exploration and analysis process.
 
-\begin{figure}[H]
+\begin{figure*}
     \begin{center}    
         \includegraphics[width=0.9\textwidth]{simvis.png}
         \caption{Example of multivariate data visualization with the SimVis system~\cite{Doleisch2012}. This screenshot shows the windflow around a building, where turbulent parts are emphasized using a vortex detection method. Image: \copyright{} 2012 IEEE, reprinted from Doleisch and Hauser~\cite{Doleisch2012}.
   \label{fig:simvis}}        
     \end{center}
-\end{figure}
+\end{figure*}
 
 Other papers for this theme covered multidimensional projection techniques that reduce multidimensional data to 2D data for visualization purposes. One paper specifically included user-centered control into the projection techniques. Another paper followed a different approach, employing parallel coordinates to show multiple data dimensions simultaneously. Overall, the papers in this category come with quite generic visualizations that can be useful in many areas of science and engineering.
 
@@ -68,13 +71,13 @@ Other papers for this theme covered multidimensional projection techniques that 
 
 This topic area is a classic one in scientific visualization, considering input from flow simulation and experiments alike. We pick one of the VizCorner papers as an example: Grzegorz Karch and colleagues~\cite{Karch2012} described methods for high-quality computational flow visualization utilizing the metaphor of dye advection. Experimental flow visualization has a long tradition of dye-based observations. With its computational counterpart, we can use the same idea now in a computer-based visualization, see Figure~\ref{fig:karman} as a typical example. 
 
-\begin{figure}[th]
+\begin{figure*}
 	\begin{center}	
 		\includegraphics[width=0.9\textwidth]{karman_weno3.png}
 		\caption{Computational dye advection~\cite{Karch2012}, applied to a 2D simulation of a von K{\'a}rm{\'a}n vortex street. Image: \copyright{} 2012 IEEE, reprinted from Karch et al.~\cite{Karch2012}.
   \label{fig:karman}}		
 	\end{center}
-\end{figure}
+\end{figure*}
 
 Other papers described alternative visual representations of flow, for example, by using textures or streak and timelines. Another paper highlighted interaction techniques with haptics that let users virtually touch the data.
 
@@ -88,13 +91,13 @@ Other papers described alternative visual representations of flow, for example, 
 
 The latter paper leads us to the next theme that focuses on the human-centered aspects of visualization. In general, interaction plays an essential role in visualization; for example, in order to support scientists in exploring their simulation data. Other VizCorner articles highlighted new developments in eye tracking for interactive visualization or the role of human visual perception. Finally, Franz Sauer and colleagues~\cite{Sauer2016} went all the way to discussing visualization as a means of storytelling that can address a wide range of audiences, from domain scientists to general scientists to the public. For the latter one, they showcased an example of an interactive museum exhibit that visualized plankton populations to museum visitors, see Figure~\ref{fig:museum}.
 
-\begin{figure}[th]
+\begin{figure*}
     \begin{center}    
         \includegraphics[width=0.55\textwidth]{museum1.png} \hspace{-3em} \raisebox{12ex}{\includegraphics[width=0.5\textwidth]{museum2.png}}
         \caption{Interactive table with a plankton visualization. Image: \copyright{} 2016 IEEE, reprinted from Sauer et al.~\cite{Sauer2016}. TODO for layout: could you place the right image slightly overlapping on the left on? As to imply something similar to an inset?
   \label{fig:museum}}        
     \end{center}
-\end{figure}
+\end{figure*}
 
 
 
@@ -108,14 +111,14 @@ The latter paper leads us to the next theme that focuses on the human-centered a
 The above example of the museum exhibit links to other visualization activities for public outreach: 
 Miguel Aragon-Calvo and Mark SubbaRao~\cite{Aragon-Calvo2015} described a virtual flight through the universe that addresses and balances scientific and artistic goals. For example, they discussed how they adapted the virtual size of galaxies in order to address the issue of vast space between those in the visualization. Figure~\ref{fig:galaxies} shows a snapshot of a flight through the universe.
 
-\begin{figure}[H]
+\begin{figure*}
     \begin{center}    
         \includegraphics[width=0.9\textwidth]{galaxies.png}
         \caption{Virtual flight through the universe. 
  Image: \copyright{} 2015 IEEE, reprinted from Aragon-Calvo and SubbaRao~\cite{Aragon-Calvo2015}.
   \label{fig:galaxies}}        
     \end{center}
-\end{figure}
+\end{figure*}
 
 Another VizCorner paper looked into the issue of reconstructing 3D models of astronomical nebulae from 2D images along with the efficient volume rendering of such nebulae. Other papers discussed approaches to visualizing special relativity and general relativity. 
 
@@ -200,7 +203,7 @@ The VizCorner with continue with a new incoming co-editor joining Joao. This cha
 %With visualization thriving as an important topic for computing in science ...
 
 \bibliographystyle{IEEEtran}
-\bibliography{refs}
+\bibliography{./refs}
 
 
 \textbf{Joao Comba} is a full professor of computer science at UFRGS, Brazil. His research interests include visual analytics, data science, information visualization, geometric algorithms, spatial data structures and high-performance computing. Joao Comba received a Ph.D. in computer science from Stanford University, USA. Contact him at comba@inf.ufrgs.br.
