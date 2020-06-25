@@ -1,11 +1,14 @@
 \documentclass[10pt,journal,compsoc]{IEEEtran}
 
-\usepackage{cite}
+% \usepackage{cite}
 \usepackage[pdftex]{graphicx}
 \usepackage{natbib}
-\usepackage{url}
+% \usepackage{url}
 \usepackage{hyperref}
 % \usepackage{breakurl}
+
+
+% \newcommand{\cm}[1]{\textbf{#1}}
 
 \begin{document}
 
@@ -33,10 +36,13 @@ Colormaps control the way data is understood when plotted because they map data 
 
 \section{Introduction}
 
-The colors chosen to represent data in a colormap have a large influence on accurate data interpretation (Fig.~\ref{fig:motivation}). Given this, it is worth careful consideration of the colormap chosen for this representation, beyond the default available or what is familiar.
+The colors chosen to represent data in a colormap have a large influence on accurate data interpretation. Importantly, one study found an increase in mistakes in medical scan interpretation by domain experts accustomed to the rainbow-based \textbf{jet} colormap when the scan data were displayed with \textbf{jet} as compared with another colormap \citep{Spence:1999ea}. Other studies have also shown an increase in interpretation mistakes when data is mapped with rainbow-based colormaps  \citep{borkin2011evaluation,Bryant:2014bh}. Given this, it is worth careful consideration of the colormap chosen for this representation, beyond the default available or what is familiar (Fig.~\ref{fig:motivation}). Note that the colormap information presented in this paper is regarding relative data (as opposed to categorical data) for which one want to understand the form and see detailed relationships in size.
+
+Given the difficulty with rainbow-based colormaps like \textbf{jet}, one might consider using a grayscale map for everything. While a well-made grayscale colormap can indeed be an excellent choice for data presentation, it is not the best colormap for all data. For example, grayscale would not be the best choice for representing topography and bathymetry in a single map, where introducing suggestive colors for land and water, respectively, would greatly add to the map. Using a distinct colormap for each variable allows for tailoring of the colormap to unique properties of each variable as well as acclimatizing viewers to the custom colormap used per variable (more on this in Fig.~\ref{fig:howtochoose}).
+
 
 \begin{figure*}
-	\includegraphics[width=\textwidth]{figures/illustrator/draft3/motivation.pdf}
+	\includegraphics[width=\textwidth]{figures/motivation.pdf}
 	\caption{}
 	\label{fig:motivation}
 \end{figure*}
@@ -44,6 +50,7 @@ The colors chosen to represent data in a colormap have a large influence on accu
 \nocite{treinish1998should}
 \nocite{borkin2011evaluation}
 \nocite{thyng2016true}
+\nocite{Spence:1999ea}
 
 
 
@@ -51,7 +58,7 @@ Color is represented by three dimensions, called a colorspace. All colorspaces a
 
 
 \begin{figure*}
-	\includegraphics[width=\textwidth]{figures/illustrator/draft3/evaluation.pdf}
+	\includegraphics[width=\textwidth]{figures/evaluation.pdf}
 	\caption{}
 	\label{fig:evaluation}
 \end{figure*}
@@ -60,13 +67,18 @@ Color is represented by three dimensions, called a colorspace. All colorspaces a
 
 
 
-Colormaps for plotting relative data (rather than categorical data) can be generally grouped into 3 categories. First, sequential colormaps have monotonic lightness change and should be used to represent data that increases in size (such as chlorophyll, Fig.~\ref{fig:howtochoose}). Second, diverging colormaps have monotonic increase or decrease in lightness to a point, then change to monotonically decrease or increase. The utility of a diverging colormap is in representing data values relative to a critical point (for example, sea surface height relative to mean sea level). Third, cyclic colormaps should be used to represent data that cycles around a circle, like tidal phase. They should either not vary in lightness at all and cycle through hue only, or should cycle in both lightness and hue such that there is no major perceptual break in the colormap.
-
-There are many considerations that should be taken into account when choosing the appropriate colormap for data presentation. For example, some form of color-blindness impacts about 7\% of Northern European, 4\% of Asian, and 3\% of African-descendent men \citep{sharpe1999opsin}. Avoiding colormaps that include both red and green, which look similar with the most common form of colorblindness, would be wise to invite a wider audience to the plot.
-
+There are many considerations that should be taken into account when choosing the appropriate colormap for data presentation (Fig.~\ref{fig:howtochoose}):
+\begin{itemize}
+	\item \textbf{Use appropriate colormap type:} Colormaps for plotting relative data can be generally grouped into 3 categories. First, sequential colormaps have monotonic lightness change and should be used to represent data that increases in size (such as chlorophyll, see example in Fig.~\ref{fig:howtochoose}). Second, diverging colormaps have a monotonic increase or decrease in lightness to a point, then change to monotonically decrease or increase. The utility of a diverging colormap is in representing data values relative to a critical point (for example, sea surface height relative to mean sea level). Third, cyclic colormaps should be used to represent data that cycles around a circle, like tidal phase. They should either not vary in lightness at all and cycle through hue only, or should cycle in both lightness and hue such that there is no major perceptual break in the colormap.
+	\item \textbf{Perceptual uniformity:} Use colormaps with perceptual uniformity in mind when possible, for example, made from a perceptually-uniform colorspace like \textit{CAM02-UCS}.
+	\item \textbf{Use intuition:} Use shades of green to represent changes in chlorophyll, or a colormap that goes from cool to warm colors to represent temperature.
+	\item \textbf{Color blindness:} Some form of color-blindness impacts about 7\% of Northern European, 4\% of Asian, and 3\% of African-descendent men \citep{sharpe1999opsin}. Avoiding colormaps that include both red and green, which look similar with the most common form of colorblindness, would be wise to invite a wider audience to the plot.
+	\item \textbf{Match colormap to data:} Choose one colormap per variable, considering the items in this list, and then stick to it for the whole presentation or paper. This way the audience will become accustomed to the meaning of the colors and be able to quickly determine meaning from plots without extensive study of the colorbar and legend.
+	\item \textbf{Magnitude vs. range:} Some sequential variables have a clear meaning of magnitude, like turbidity or turbulence, and others measure a metric, like temperature. For the former, consider a colormap with shades of one color, where increasing shades represent increasing size of the variable. For the latter, consider a colormap that transverses several colors so that there is always a color representing the range of data values instead of white, which could connote the absense of the variable.
+\end{itemize}
 
 \begin{figure*}
-	\includegraphics[width=\textwidth]{figures/illustrator/draft3/howtochoose.pdf}
+	\includegraphics[width=\textwidth]{figures/howtochoose.pdf}
 	\caption{}
 	\label{fig:howtochoose}
 \end{figure*}
@@ -76,15 +88,17 @@ There are many considerations that should be taken into account when choosing th
 \nocite{egbert2002efficient}
 
 
+
+
 A wide variety of reasonable, available colormaps are presented in Fig.~\ref{fig:allmaps}. Colormaps are plotted by the lightness as calculated in perceptually-uniform colorspace \textit{CAM02-UCS} in order to demonstrate this important property for making a colormap choice.
 
 \begin{figure*}
-	\includegraphics[width=\textwidth]{figures/illustrator/draft3/allmaps.pdf}
+	\includegraphics[width=\textwidth]{figures/allmaps.pdf}
 	\caption{}
 	\label{fig:allmaps}
 \end{figure*}
 % colormaps
-\nocite{matplotlib}
+\nocite{hunter2007matplotlib}
 \nocite{nunez2018optimizing}
 \nocite{cubehelix}
 \nocite{twilight}
@@ -98,6 +112,15 @@ A wide variety of reasonable, available colormaps are presented in Fig.~\ref{fig
 \section{Conclusion}
 
 Colormaps have fundamental control over interpretation of data, and thus should be given some attention. Background information based on human perception of color as well as some basic design advice has been presented to guide selections.
+
+
+\section{Acknowledgments}
+
+The notebook used to create the base figures in this paper can be found at \url{https://github.com/kthyng/cise-colormaps}.
+
+Plots were created using the following Python packages: matplotlib \citep{hunter2007matplotlib}, Jupyter \citep{kluyver2016jupyter}, numpy \citep{oliphant2006guide,walt2011numpy},
+xarray \citep{hoyer2017xarray},
+pandas \citep{mckinney-proc-scipy-2010}, cartopy \citep{Cartopy}, and colorspacious \citep{colorspacious} along with the colormaps packages cmocean, colorcet \citep{colorcet}, and palettable \citep{palettable}.
 
 
 

@@ -54,16 +54,6 @@
   year={2015}
 }
 
-@article{matplotlib,
-title={matplotlib/matplotlib: REL: v3.1.1},
-journal={},
-volume={},
-number={},
-pages={},
-year={2019},
-publisher={Zenodo},
-author={Caswell, Thomas A and Droettboom, Michael and Hunter, John and Lee, Antony and Firing, Eric and Stansby, David and Klymak, Jody and Andrade, Elliott Sales De and Nielsen, Jens Hedegaard and Varoquaux, Nelle and Hoffmann, Tim and Root, Benjamin and Elson, Phil and May, Ryan and Dale, Darren and Lee, Jae-Joon and Seppänen, Jouni K. and McDougall, Damon and Straw, Andrew and Hobson, Paul and Gohlke, Christoph and Yu, Tony S and Ma, Eric and Vincent, Adrien F. and Silvester, Steven and Moad, Charlie and Katins, Jan and Kniazev, Nikita and Ariza, Federico and Ernest, Elan}}
-
 @article{nunez2018optimizing,
   title={Optimizing colormaps with consideration for color vision deficiency to enable accurate interpretation of scientific data},
   author={Nu{\~n}ez, Jamie R and Anderton, Christopher R and Renslow, Ryan S},
@@ -99,7 +89,7 @@ author={Caswell, Thomas A and Droettboom, Michael and Hunter, John and Lee, Anto
 
 @software{viscm,
 title={viscm},
-url={https://github.com/matplotlib/viscm},
+url={\burl{https://github.com/matplotlib/viscm}},
 journal={},
 volume={},
 number={},
@@ -108,8 +98,34 @@ year={2015},
 publisher={GitHub repository},
 author={Nathaniel J. Smith and Stéfan van der Walt}}
 
+@software{colorspacious,
+title={Colorspacious},
+url={\burl{https://github.com/njsmith/colorspacious}},
+year={2015},
+publisher={GitHub repository},
+author={Nathaniel J. Smith}
+}
+
+
+@software{colorcet,
+title={Colorcet},
+url={\burl{https://github.com/holoviz/colorcet}},
+year={2019},
+publisher={GitHub repository},
+author={HoloViz}
+}
+
+
+@software{palettable,
+title={Palettable},
+url={\burl{https://github.com/jiffyclub/palettable}},
+year={2019},
+publisher={GitHub repository},
+author={Matt Davis}
+}
+
 @misc{chlor,
-title={{ERDDAP - Chlorophyll-a, Aqua MODIS, NPP, 0.025 degrees, Pacific Ocean, 2006-present, EXPERIMENTAL (Monthly Composite) - Data Access Form}},
+title={{ERDDAP - Chlorophyll-a, Aqua MODIS, NPP, 0.025 degrees, Pacific Ocean, 2006--present, EXPERIMENTAL (Monthly Composite) - Data Access Form}},
 url={\burl{https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMBchlamday.html}},
 journal={},
 volume={},
@@ -143,7 +159,7 @@ author={Dave Green}}
 
 @software{twilight,
 title={twilight},
-url={https://github.com/bastibe/twilight},
+url={\burl{https://github.com/bastibe/twilight}},
 journal={},
 volume={},
 number={},
@@ -176,7 +192,7 @@ author={Matteo Niccoli}}
 
 @software{brewer,
 title={Color Brewer 2.0},
-url={https://github.com/axismaps/colorbrewer},
+url={\burl{https://github.com/axismaps/colorbrewer}},
 journal={},
 volume={},
 number={},
@@ -184,3 +200,93 @@ pages={},
 year={2013},
 publisher={GitHub repository, The Pennsylvania State University},
 author={Cynthia Brewer and Mark Harrower}}
+
+@article{Spence:1999ea,
+author = {Spence, Ian and Kutlesa, Natasha and Rose, David L},
+title = {{Using color to code quantity in spatial displays.}},
+journal = {Journal of Experimental Psychology: Applied},
+year = {1999},
+volume = {5},
+number = {4},
+pages = {393--412},
+month = dec
+}
+
+@article{Bryant:2014bh,
+author = {Bryant, B and Holiner, M and Kroot, R and Sherman-Morris, K},
+title = {{Usage of color scales on radar maps}},
+journal = {J Oper Meteor},
+year = {2014},
+volume = {2},
+number = {14},
+pages = {169--179}
+}
+
+
+@article{hunter2007matplotlib,
+  title={Matplotlib: A 2D graphics environment},
+  author={Hunter, John D},
+  journal={{Computing in Science \& Engineering}},
+  volume={9},
+  number={3},
+  pages={90},
+  year={2007},
+  publisher={IEEE Computer Society}
+}
+
+@inproceedings{kluyver2016jupyter,
+  title={Jupyter Notebooks -- a publishing format for reproducible computational workflows.},
+  author={Kluyver, Thomas and Ragan-Kelley, Benjamin and P{\'e}rez, Fernando and Granger, Brian E and Bussonnier, Matthias and Frederic, Jonathan and Kelley, Kyle and Hamrick, Jessica B and Grout, Jason and Corlay, Sylvain and others},
+  booktitle={ELPUB},
+  pages={87--90},
+  year={2016}
+}
+
+@book{oliphant2006guide,
+  title={A guide to NumPy},
+  author={Oliphant, Travis E},
+  volume={1},
+  year={2006},
+  publisher={Trelgol Publishing USA}
+}
+
+@article{walt2011numpy,
+  title={The NumPy array: a structure for efficient numerical computation},
+  author={Walt, St{\'e}fan van der and Colbert, S Chris and Varoquaux, Gael},
+  journal={Computing in science \& engineering},
+  volume={13},
+  number={2},
+  pages={22--30},
+  year={2011},
+  publisher={IEEE Computer Society}
+}
+
+@manual{Cartopy,
+author = {{Met Office}},
+title = {Cartopy: a cartographic python library with a matplotlib interface},
+year = {2010 - 2015},
+address = {Exeter, Devon },
+url = {\burl{http://scitools.org.uk/cartopy}}
+}
+
+@InProceedings{ mckinney-proc-scipy-2010,
+  author    = { {W}es {M}c{K}inney },
+  title     = { {D}ata {S}tructures for {S}tatistical {C}omputing in {P}ython },
+  booktitle = { {P}roceedings of the 9th {P}ython in {S}cience {C}onference },
+  pages     = { 56 - 61 },
+  year      = { 2010 },
+  editor    = { {S}t\'efan van der {W}alt and {J}arrod {M}illman },
+  doi       = { 10.25080/Majora-92bf1922-00a }
+}
+
+@article{hoyer2017xarray,
+  title     = {xarray: {N-D} labeled arrays and datasets in {Python}},
+  author    = {Hoyer, S. and J. Hamman},
+  journal   = {Journal of Open Research Software},
+  volume    = {5},
+  number    = {1},
+  year      = {2017},
+  publisher = {Ubiquity Press},
+  doi       = {10.5334/jors.148},
+  url       = {\burl{http://doi.org/10.5334/jors.148}}
+}

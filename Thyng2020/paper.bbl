@@ -21,16 +21,26 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{treinish1998should}
-B.~Rogowitz and L.~A. Treinish, ``Why should engineers and scientists be
-  worried about color?'' \emph{IBM Thomas J. Watson Research Center, Yorktown
-  Heights, NY}, p.~46, 1998.
+\bibitem{Spence:1999ea}
+I.~Spence, N.~Kutlesa, and D.~L. Rose, ``{Using color to code quantity in
+  spatial displays.}'' \emph{Journal of Experimental Psychology: Applied},
+  vol.~5, no.~4, pp. 393--412, Dec. 1999.
 
 \bibitem{borkin2011evaluation}
 M.~Borkin, K.~Gajos, A.~Peters, D.~Mitsouras, S.~Melchionna, F.~Rybicki,
   C.~Feldman, and H.~Pfister, ``Evaluation of artery visualizations for heart
   disease diagnosis,'' \emph{IEEE transactions on visualization and computer
   graphics}, vol.~17, no.~12, pp. 2479--2488, 2011.
+
+\bibitem{Bryant:2014bh}
+B.~Bryant, M.~Holiner, R.~Kroot, and K.~Sherman-Morris, ``{Usage of color
+  scales on radar maps},'' \emph{J Oper Meteor}, vol.~2, no.~14, pp. 169--179,
+  2014.
+
+\bibitem{treinish1998should}
+B.~Rogowitz and L.~A. Treinish, ``Why should engineers and scientists be
+  worried about color?'' \emph{IBM Thomas J. Watson Research Center, Yorktown
+  Heights, NY}, p.~46, 1998.
 
 \bibitem{thyng2016true}
 K.~M. Thyng, C.~A. Greene, R.~D. Hetland, H.~M. Zimmerle, and S.~F. DiMarco,
@@ -44,7 +54,7 @@ P.~Kovesi, ``Good colour maps: How to design them,'' \emph{arXiv preprint
 \bibitem{viscm}
 \BIBentryALTinterwordspacing
 N.~J. Smith and S.~van~der Walt, ``viscm,'' 2015. [Online]. Available:
-  \url{https://github.com/matplotlib/viscm}
+  \url{\burl{https://github.com/matplotlib/viscm}}
 \BIBentrySTDinterwordspacing
 
 \bibitem{sharpe1999opsin}
@@ -55,7 +65,7 @@ L.~T. Sharpe, A.~Stockman, H.~J{\"a}gle, and J.~Nathans, ``Opsin genes, cone
 \bibitem{chlor}
 \BIBentryALTinterwordspacing
 ``{ERDDAP - Chlorophyll-a, Aqua MODIS, NPP, 0.025 degrees, Pacific Ocean,
-  2006-present, EXPERIMENTAL (Monthly Composite) - Data Access Form}.''
+  2006--present, EXPERIMENTAL (Monthly Composite) - Data Access Form}.''
   [Online]. Available:
   \url{\burl{https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMBchlamday.html}}
 \BIBentrySTDinterwordspacing
@@ -71,13 +81,9 @@ G.~D. Egbert and S.~Y. Erofeeva, ``Efficient inverse modeling of barotropic
   ocean tides,'' \emph{Journal of Atmospheric and Oceanic technology}, vol.~19,
   no.~2, pp. 183--204, 2002.
 
-\bibitem{matplotlib}
-T.~A. Caswell, M.~Droettboom, J.~Hunter, A.~Lee, E.~Firing, D.~Stansby,
-  J.~Klymak, E.~S.~D. Andrade, J.~H. Nielsen, N.~Varoquaux, T.~Hoffmann,
-  B.~Root, P.~Elson, R.~May, D.~Dale, J.-J. Lee, J.~K. Seppänen, D.~McDougall,
-  A.~Straw, P.~Hobson, C.~Gohlke, T.~S. Yu, E.~Ma, A.~F. Vincent, S.~Silvester,
-  C.~Moad, J.~Katins, N.~Kniazev, F.~Ariza, and E.~Ernest,
-  ``matplotlib/matplotlib: Rel: v3.1.1,'' 2019.
+\bibitem{hunter2007matplotlib}
+J.~D. Hunter, ``Matplotlib: A 2d graphics environment,'' \emph{{Computing in
+  Science \& Engineering}}, vol.~9, no.~3, p.~90, 2007.
 
 \bibitem{nunez2018optimizing}
 J.~R. Nu{\~n}ez, C.~R. Anderton, and R.~S. Renslow, ``Optimizing colormaps with
@@ -93,7 +99,7 @@ D.~Green, ``{Dave Green's} `cubehelix' colour scheme.'' [Online]. Available:
 \bibitem{twilight}
 \BIBentryALTinterwordspacing
 B.~Bechtold, ``twilight,'' 2015. [Online]. Available:
-  \url{https://github.com/bastibe/twilight}
+  \url{\burl{https://github.com/bastibe/twilight}}
 \BIBentrySTDinterwordspacing
 
 \bibitem{matlab}
@@ -116,12 +122,65 @@ A.~Light and P.~J. Bartlein, ``The end of the rainbow? color schemes for
 \bibitem{brewer}
 \BIBentryALTinterwordspacing
 C.~Brewer and M.~Harrower, ``Color brewer 2.0,'' 2013. [Online]. Available:
-  \url{https://github.com/axismaps/colorbrewer}
+  \url{\burl{https://github.com/axismaps/colorbrewer}}
 \BIBentrySTDinterwordspacing
 
 \bibitem{crameri2018geodynamic}
 F.~Crameri, ``Geodynamic diagnostics, scientific visualisation and staglab
   3.0,'' \emph{Geoscientific Model Development}, vol.~11, no.~6, pp.
   2541--2562, 2018.
+
+\bibitem{kluyver2016jupyter}
+T.~Kluyver, B.~Ragan-Kelley, F.~P{\'e}rez, B.~E. Granger, M.~Bussonnier,
+  J.~Frederic, K.~Kelley, J.~B. Hamrick, J.~Grout, S.~Corlay \emph{et~al.},
+  ``Jupyter notebooks -- a publishing format for reproducible computational
+  workflows.'' in \emph{ELPUB}, 2016, pp. 87--90.
+
+\bibitem{oliphant2006guide}
+T.~E. Oliphant, \emph{A guide to NumPy}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Trelgol Publishing USA, 2006, vol.~1.
+
+\bibitem{walt2011numpy}
+S.~v.~d. Walt, S.~C. Colbert, and G.~Varoquaux, ``The numpy array: a structure
+  for efficient numerical computation,'' \emph{Computing in science \&
+  engineering}, vol.~13, no.~2, pp. 22--30, 2011.
+
+\bibitem{hoyer2017xarray}
+\BIBentryALTinterwordspacing
+S.~Hoyer and J.~Hamman, ``xarray: {N-D} labeled arrays and datasets in
+  {Python},'' \emph{Journal of Open Research Software}, vol.~5, no.~1, 2017.
+  [Online]. Available: \url{\burl{http://doi.org/10.5334/jors.148}}
+\BIBentrySTDinterwordspacing
+
+\bibitem{mckinney-proc-scipy-2010}
+{W}es {M}c{K}inney, ``{D}ata {S}tructures for {S}tatistical {C}omputing in
+  {P}ython,'' in \emph{{P}roceedings of the 9th {P}ython in {S}cience
+  {C}onference}, {S}t\'efan van~der {W}alt and {J}arrod {M}illman, Eds., 2010,
+  pp. 56 -- 61.
+
+\bibitem{Cartopy}
+\BIBentryALTinterwordspacing
+{Met Office}, \emph{Cartopy: a cartographic python library with a matplotlib
+  interface}, Exeter, Devon, 2010 - 2015. [Online]. Available:
+  \url{\burl{http://scitools.org.uk/cartopy}}
+\BIBentrySTDinterwordspacing
+
+\bibitem{colorspacious}
+\BIBentryALTinterwordspacing
+N.~J. Smith, ``Colorspacious,'' 2015. [Online]. Available:
+  \url{\burl{https://github.com/njsmith/colorspacious}}
+\BIBentrySTDinterwordspacing
+
+\bibitem{colorcet}
+\BIBentryALTinterwordspacing
+HoloViz, ``Colorcet,'' 2019. [Online]. Available:
+  \url{\burl{https://github.com/holoviz/colorcet}}
+\BIBentrySTDinterwordspacing
+
+\bibitem{palettable}
+\BIBentryALTinterwordspacing
+M.~Davis, ``Palettable,'' 2019. [Online]. Available:
+  \url{\burl{https://github.com/jiffyclub/palettable}}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}
